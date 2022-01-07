@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5e454601-9a65-437c-b752-596366865d76">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from costumer]]>
+	</queryString>
+	<field name="id_costumer" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_costumer" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="notelp_costumer" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_pembelian" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_berwisata" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_wisata" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_pemandu" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="226" y="19" width="304" height="36" uuid="0b2b1fd0-5c69-4e9b-831b-b0a917854cab"/>
+				<textElement>
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA COSTUMER]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="5" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="4baa0886-e9a8-4fb3-b83d-58ddd4e0ce57"/>
+				<text><![CDATA[nama_costumer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="144" y="2" width="100" height="20" uuid="a534dcc5-9653-4a61-8161-0cdcd9d2ae86"/>
+				<text><![CDATA[notelp_costumer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="283" y="2" width="100" height="20" uuid="fea7f810-4881-4a82-be77-5e68bc2e9206"/>
+				<text><![CDATA[tgl_pembelian]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="2" width="100" height="20" uuid="3baffd7a-cd15-446e-8712-892f39bca916"/>
+				<text><![CDATA[tgl_berwisata]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="565" y="0" width="100" height="20" uuid="a4dbbb5f-9969-401b-abe3-1526372cb4e1"/>
+				<text><![CDATA[nama_wisata]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="702" y="0" width="100" height="20" uuid="cfd01006-8fd8-4fc0-90c7-bdde748e4f8b"/>
+				<text><![CDATA[nama_pemandu]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="26" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="d9ea1767-a38c-4453-88cf-775f97f83e61"/>
+				<textFieldExpression><![CDATA[$F{nama_costumer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="144" y="0" width="100" height="20" uuid="812ccc9b-3929-4897-8191-0151ea9bc53a"/>
+				<textFieldExpression><![CDATA[$F{notelp_costumer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="283" y="0" width="100" height="20" uuid="1b0bd3c9-2370-407e-b4ba-86d07b8b7b26"/>
+				<textFieldExpression><![CDATA[$F{tgl_pembelian}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="0" width="100" height="20" uuid="de3a70bd-aeef-42c1-9c80-c4614366cbba"/>
+				<textFieldExpression><![CDATA[$F{tgl_berwisata}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="565" y="0" width="100" height="20" uuid="64fa941d-414d-4c8c-9a90-af51161bd122"/>
+				<textFieldExpression><![CDATA[$F{nama_wisata}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="702" y="0" width="100" height="20" uuid="499c525b-5061-4108-9fb1-d57690423065"/>
+				<textFieldExpression><![CDATA[$F{nama_pemandu}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

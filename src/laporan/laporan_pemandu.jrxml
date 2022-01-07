@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="316b7b42-98c0-4113-b8d5-90fa84e03c44">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from pemandu]]>
+	</queryString>
+	<field name="id_pemandu" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_pemandu" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_lahir_pemandu" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jk_pemandu" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat_pemandu" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="notelp_pemandu" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="158" y="18" width="263" height="40" uuid="17502c6e-6aed-44f8-bd49-1e06bad35ea9"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA PEMANDU]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="21" y="0" width="35" height="20" uuid="cf61516d-fecb-4c35-a9ef-f7de49130394"/>
+				<text><![CDATA[NAMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="231" y="0" width="71" height="20" uuid="8fae50b0-51bf-444b-b5ac-e2c22ab6e807"/>
+				<text><![CDATA[Tanggal Lahir]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="341" y="0" width="80" height="20" uuid="671bdea3-a10e-49e0-b3db-7b87d1dae7ae"/>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="131" y="0" width="44" height="20" uuid="652020f7-f8d1-406b-b6a9-71847c2f6823"/>
+				<text><![CDATA[ALAMAT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="473" y="0" width="62" height="20" uuid="f6ac11c3-5ae3-4a02-b660-cf9b02d0c23f"/>
+				<text><![CDATA[No. Telpon]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<textField>
+				<reportElement x="21" y="0" width="66" height="20" uuid="8eae5eb7-6bf6-4d4f-8498-cf140a686c94"/>
+				<textFieldExpression><![CDATA[$F{nama_pemandu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="0" width="68" height="20" uuid="4bfff9d2-deb9-46d5-b6c3-3f63cb918792"/>
+				<textFieldExpression><![CDATA[$F{alamat_pemandu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="241" y="0" width="48" height="20" uuid="76867882-756e-419e-86fc-f1886a986c1e"/>
+				<textFieldExpression><![CDATA[$F{tgl_lahir_pemandu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="351" y="0" width="80" height="20" uuid="ad0ae6a8-c237-4d65-a181-2207ccdd89c5"/>
+				<textFieldExpression><![CDATA[$F{jk_pemandu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="463" y="0" width="72" height="20" uuid="31ee3824-7b0b-4e50-8c30-998dc3086065"/>
+				<textFieldExpression><![CDATA[$F{notelp_pemandu}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
